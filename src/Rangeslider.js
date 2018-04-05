@@ -169,6 +169,7 @@ class Slider extends Component {
    * @return {void}
    */
   handleKeyDown = e => {
+    console.log(e)
     if (e.key === 'Tab') {
       return
     }

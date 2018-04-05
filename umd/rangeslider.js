@@ -213,6 +213,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    _this.handleKeyDown = function (e) {
+	      console.log(e);
 	      if (e.key === 'Tab') {
 	        return;
 	      }
