@@ -213,6 +213,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    _this.handleKeyDown = function (e) {
+	      if (e.key === 'Tab') {
+	        return;
+	      }
 	      e.preventDefault();
 	      var keyCode = e.keyCode;
 	      var _this$props = _this.props,

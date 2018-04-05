@@ -169,6 +169,9 @@ class Slider extends Component {
    * @return {void}
    */
   handleKeyDown = e => {
+    if (e.key === 'Tab') {
+      return
+    }
     e.preventDefault()
     const { keyCode } = e
     const { value, min, max, step, onChange } = this.props
