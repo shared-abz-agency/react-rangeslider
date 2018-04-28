@@ -213,7 +213,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    _this.handleKeyDown = function (e) {
-	      console.log(e);
 	      if (e.key === 'Tab') {
 	        return;
 	      }
@@ -460,7 +459,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	                onTouchEnd: this.handleEnd,
 	                style: labelStyle
 	              },
-	              this.props.labels[key]
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'rangeslider__label-item-text' },
+	                this.props.labels[key]
+	              )
 	            ));
 	          }
 	        } catch (err) {
