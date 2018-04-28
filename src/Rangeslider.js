@@ -169,7 +169,6 @@ class Slider extends Component {
    * @return {void}
    */
   handleKeyDown = e => {
-    console.log(e)
     if (e.key === 'Tab') {
       return
     }
@@ -328,7 +327,7 @@ class Slider extends Component {
             onTouchEnd={this.handleEnd}
             style={labelStyle}
           >
-            {this.props.labels[key]}
+            <span className={'rangeslider__label-item-text'}>{this.props.labels[key]}</span>
           </li>
         )
       }
